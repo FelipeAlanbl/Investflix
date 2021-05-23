@@ -1,0 +1,21 @@
+@media (max-width:810px) {
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .video-principal .container {
+        width: 100%;
+    }
+
+    .imagem-min {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+@media (min-width:1000px) {
+    .descricao {
+        width: 50%
+    }
+}

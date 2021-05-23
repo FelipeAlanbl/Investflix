@@ -1,0 +1,127 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+.frame {
+    line-height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.frame iframe {
+    margin: 30px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elementos base*/
+
+.container {
+    margin-left: 20px;
+}
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: var(--vermelho);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Arial Black';
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+/* video principal */
+
+.video-principal {
+    font-size: 16px;
+    /*background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)100%), url('../resources/img/fabio-holder.jpeg') no-repeat right;*/
+    background-repeat: no-repeat;
+    background-position-x: right;
+
+    height: 500px;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+ 
+}
+
+.video-principal .container {
+    width: 60%;
+}
+
+.titulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.descricao {
+    line-height: 1.5em;
+    margin-bottom: 90px;
+}
+
+.botao {
+    text-transform: uppercase;
+    background-color: rgba(88, 87, 87, 0.2);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    margin-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition:  ease 0.3s all;
+}
+
+.botao:hover {
+    color: var(--preta);
+    background: #fff;
+}
+
+.botao i {
+    margin: 8px;
+}
+
+.imagem-min {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.carrosel-videos {
+    margin-top: 10px;
+}
